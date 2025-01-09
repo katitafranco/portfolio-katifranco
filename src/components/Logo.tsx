@@ -1,10 +1,13 @@
+//
 // src/components/Logo.tsx
 const Logo = () => (
-  <div className="text-2xl font-bold text-gray-800 flex items-center space-x-2">
-    <a href="#home" className="text-2xl font-bold text-gray-800">
+  <div className="text-center">
+    <a
+      href="#home"
+      className="text-2x1 font-bold text-gray-800 whitespace-nowrap"
+    >
       Katiuska Franco{" "}
     </a>
-    {/* Marca personal */}
   </div>
 );
 
