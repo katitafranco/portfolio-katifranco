@@ -8,9 +8,10 @@ const resources = {
       navbar: {
         home: "Home",
         portfolio: "Portfolio",
-        about: "About Me",
+        aboutMe: "About Me",
         testimonials: "Testimonials",
-        contact: "Contact Me"
+        contactMe: "Contact Me",
+        myExpertise:"My Expertise"
       },
       hero: {
         title: "I create web and mobile designs",
@@ -29,9 +30,10 @@ const resources = {
       navbar: {
         home: "Inicio",
         portfolio: "Portafolio",
-        about: "Sobre mí",
+        aboutMe: "Sobre mí",
         testimonials: "Testimonios",
-        contact: "Contáctame"
+        contactMe: "Contáctame",
+        myExpertise:"Mis Habilidades"
       },
       hero: {
         title: "Creo diseños web y móviles",
