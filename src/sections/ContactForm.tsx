@@ -1,7 +1,7 @@
 const ContactForm = () => {
   return (
     <section
-      id="home"
+      id="contact"
       className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-blue-800 text-white"
     >
       <h1 className="text-4xl md:text-6xl font-bold mb-4">

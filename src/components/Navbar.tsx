@@ -21,6 +21,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-white shadow-lg z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
+        {/* Logo */}
+        <Logo />
         {/* Marca personal */}
 
         {/* Desktop Menu */}
@@ -35,8 +37,10 @@ const Header = () => {
             </a>
           ))}
           {/* Contact Button */}
-          <button className="bg-purple-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition">
-            {t("navbar.contactMe")}
+          <button className="border-purple-600 bg-transparent text-white px-4 py-2 rounded-md shadow hover:border-blue-800 bg-transparent hover:text-blue-800 transition">
+            <a className="text-purple-600 hover:text-blue-800" href="#contact">
+              {t("navbar.contactMe")}
+            </a>
           </button>
           {/* Language Switcher */}
           <div className="flex space-x-2">
@@ -75,7 +79,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="block py-2 text-gray-700 hover:text-blue-600 transition"
+              className="block py-2 text-gray-700 flex justify-center hover:text-blue-600 transition"
             >
               {link.label}
             </a>
@@ -96,8 +100,10 @@ const Header = () => {
             </button>
           </div>
           {/* Contact Button Mobile */}
-          <button className="bg-purple-600 text-white w-full py-2 rounded-lg shadow mt-4 hover:bg-blue-800 transition">
-            {t("navbar.contactMe")}
+          <button className="border-purple-600 bg-transparent text-white w-full py-2 rounded-lg shadow mt-4 hover:bg-blue-800 transition">
+            <a className="text-purple-600" href="#contact">
+              {t("navbar.contactMe")}
+            </a>
           </button>
         </div>
       )}
