@@ -27,8 +27,8 @@ const AboutMe = () => {
             <p className="text-md  md:text-lg lg:text-xl text-gray-700">
               {t("aboutMe.description")}
             </p>
-            <br />
-            <p className="text-gray-900 mx-8">{t("aboutMe.skills")}</p>
+            {/*  <br />
+            <p className="text-gray-900 mx-8">{t("aboutMe.skills")}</p> */}
           </div>
         </div>
       </div>

@@ -40,6 +40,7 @@ const resources = {
       },
       portfolio: {
         title: "Portfolio",
+        button:"View In GitHub",
         projects: [
           {
             title: "SPA Website",
@@ -122,36 +123,49 @@ const resources = {
       },
       portfolio: {
         title: "Portafolio",
+        button:"Ingresa a mi Github",
         projects: [
           {
             title: "Sitio Web SPA",
             description: "Sitio Web Responsivo para un SPA, con formulario de contacto, desarrollado con HTML y CSS, diseño atractivo y funcional.",
             link: "https://katitafranco.github.io/web_spa_responsive/index.html",
+           image: "./src/assets/imagenSPA.png"
+          
           },
           {
             title: "Sitio Web Turismo",
             description: "Aplicación web responsiva para explorar lugares turísticos, utilizando HTML, CSS y SASS.",
             link: "https://katitafranco.github.io/dynamic-travel-sass/dist/index.html",
+          image: "./src/assets/imagenTurismo.png", // Cambia por la imagen de tu proyecto
+      
           },
           {
             title: "Agencia de Negocios",
             description: "Web responsiva para agencia de negocios con HTML, CSS, JS, animaciones y video.",
             link: "https://katitafranco.github.io/biz-agency-site/",
+          image: "./src/assets/imagenBusiness.png",
+      
           },
           {
             title: "Cotizador de Hosting",
             description: "Layout responsivo de un cotizador de hosting usando Flexbox.",
             link: "https://katitafranco.github.io/flex-cotizador-hosting/",
+           image: "./src/assets/imagenCotizador.png", // Cambia por la imagen de tu proyecto
+      
           },
           {
             title: "Testimonios Interactivos",
             description: "Página web que presenta un slider de testimonios interactivo, utilizando HTML, CSS y JavaScript nativo, con transiciones suaves.",
             link: "https://katitafranco.github.io/slider-testimonios-js/",
+           image:"./src/assets/imagenSliders.png",
+          
           },
           {
             title: "MERN User CRUD",
             description: "Aplicación CRUD de usuarios usando MongoDB, Mongoose, Express, React, Node.js con animaciones de AOS y notificaciones con SweetAlert2.",
             link: "https://github.com/katitafranco/crud-mern-stack/tree/master",
+           image:"./src/assets/imagenCRUD2.png",
+         
           },
         ],
       },
