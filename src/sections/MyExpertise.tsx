@@ -1,25 +1,64 @@
-const MyExpertise = () => {
+import React from "react";
+import { useTranslation } from "react-i18next";
+import ExpertiseCard from "../components/ExpertiseCard";
+
+// Importa los GIFs correctamente
+import fullStackGif from "../assets/computer.png";
+import frontEndGif from "../assets/ux-design.gif";
+import uiUxGif from "../assets/graphic-designer.gif";
+import teachingGif from "../assets/elearning.gif";
+
+const Expertise = () => {
+  const { t } = useTranslation();
+
+  const colorCard = "bg-purple-100";
+  const skills = [
+    {
+      iconSrc: fullStackGif, // Pasa directamente la ruta del archivo
+      title: t("expertise.fullstackTitle"),
+      description: t("expertise.fullstackDescription"),
+      color: "bg-purple-100",
+    },
+    {
+      iconSrc: frontEndGif, // Pasa directamente la ruta del archivo
+      title: t("expertise.frontendTitle"),
+      description: t("expertise.frontendDescription"),
+      color: "bg-purple-100",
+    },
+    {
+      iconSrc: uiUxGif, // Pasa directamente la ruta del archivo
+      title: t("expertise.uiuxTitle"),
+      description: t("expertise.uiuxDescription"),
+      color: "bg-purple-100",
+    },
+    {
+      iconSrc: teachingGif, // Pasa directamente la ruta del archivo
+      title: t("expertise.teachingTitle"),
+      description: t("expertise.teachingDescription"),
+      color: "bg-purple-100",
+    },
+  ];
+
   return (
-    <section id="expertise" className=" h-screen py-16 bg-gray-100">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">My Expertise</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-4 border rounded-lg">
-            <h3 className="text-xl font-semibold">UI/UX Design</h3>
-            <p>Creating user-friendly and visually appealing interfaces.</p>
-          </div>
-          <div className="p-4 border rounded-lg">
-            <h3 className="text-xl font-semibold">Frontend Development</h3>
-            <p>Building responsive and dynamic web applications.</p>
-          </div>
-          <div className="p-4 border rounded-lg">
-            <h3 className="text-xl font-semibold">React & React Native</h3>
-            <p>Expertise in modern frameworks for web and mobile.</p>
-          </div>
+    <section id="expertise" className="bg-white py-16">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-purple-600 text-center mb-12">
+          {t("expertise.title")}
+        </h2>
+        <div className="flex justify-between items-center gap-6 flex-wrap">
+          {skills.map((skill, index) => (
+            <ExpertiseCard
+              key={index}
+              iconSrc={skill.iconSrc} // Asegúrate de pasar el src correcto
+              title={skill.title}
+              description={skill.description}
+              color={colorCard}
+            />
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default MyExpertise;
+export default Expertise;

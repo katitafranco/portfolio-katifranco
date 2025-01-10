@@ -3,11 +3,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bgBase: "#F5FCFF", // Color Base
-        colorPrimary: "#5E3BEE",
-        colorDribble: "#E62872", //
-        colorHeading: "#282938",
-        colorBody: "#1C1E53",
+        purple: "#6C63FF",
+        black: "#232323",
+        white: "#FFFFFF",
+        lightGray: "#F7F8FA",
+        pink: "#FF3366",
+        darkBlue: "#2D2E83",
       },
       fontFamily: {
         sans: ["Jersey 10", "sans-serif"], // Configura "Roboto" como la fuente principal

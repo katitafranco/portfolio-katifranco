@@ -4,7 +4,7 @@ const Logo = () => (
   <div className="text-center">
     <a
       href="#home"
-      className="text-2x1 font-bold text-gray-800 whitespace-nowrap"
+      className="text-2x1 font-bold text-purple whitespace-nowrap"
     >
       Katiuska Franco{" "}
     </a>
