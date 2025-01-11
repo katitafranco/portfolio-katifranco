@@ -22,10 +22,11 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-purple-600 text-center mb-2">
             {t("portfolio.title")}
           </h2>
+
           <a
             href="https://github.com/katitafranco/"
             target="_blank"
-            className="inline-block p-2 bg-pink bg-transparent text-white rounded-md hover:bg-purple-800 transition-colors"
+            className=" flex flex-row justify-between px-6 pb-0 mb-0 items-center bg-pink text-white rounded-md hover:bg-purple-800 transition-colors"
           >
             <span className="mr-2">{t("portfolio.button")}</span>
             {/* Aquí está el logo de GitHub en formato SVG */}
@@ -42,7 +43,7 @@ const Portfolio = () => {
             </svg>
           </a>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <PortfolioCard
               key={index}
