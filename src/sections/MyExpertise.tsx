@@ -40,7 +40,7 @@ const Expertise = () => {
   ];
 
   return (
-    <section id="expertise" className="bg-white py-16">
+    <section id="expertise" className="bg-white h-full py-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-purple-600 text-center mb-12">
           {t("expertise.title")}
