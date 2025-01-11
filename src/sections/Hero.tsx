@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
       <div className="relative w-1/2 hidden lg:block">
         <img
-          src="/path/to/your-profile-image.jpg" // Cambia a la ruta de tu imagen
+          src="./src/assets/hero2.png"
           alt="Perfil"
           className="w-full h-auto object-cover rounded-lg shadow-lg"
         />
