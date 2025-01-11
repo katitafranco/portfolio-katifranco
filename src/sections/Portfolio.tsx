@@ -18,15 +18,23 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="bg-gray-50 py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex flex-row justify-between mb-2 whitespace-nowrap">
+        <div
+          id="titlePortfolio"
+          className="flex flex-col sm:flex-row justify-between mb-2 whitespace-nowrap"
+        >
           <h2 className="text-4xl font-bold text-purple-600 text-center mb-2">
             {t("portfolio.title")}
           </h2>
 
+          {/* <a
+            href="https://github.com/katitafranco/"
+            target="_blank"
+            className=" flex flex-row justify-between px-6 pb-0 mb-0 items-center bg-pink text-white rounded-md hover:bg-purple-800 transition-colors "
+          > */}
           <a
             href="https://github.com/katitafranco/"
             target="_blank"
-            className=" flex flex-row justify-between px-6 pb-0 mb-0 items-center bg-pink text-white rounded-md hover:bg-purple-800 transition-colors"
+            className="inline-flex flex-row justify-between px-6 sm:px-2 sm:mx-2 py-1 mb-0 items-center bg-pink text-white rounded-md hover:bg-purple-800 transition-colors"
           >
             <span className="mr-2">{t("portfolio.button")}</span>
             {/* Aquí está el logo de GitHub en formato SVG */}

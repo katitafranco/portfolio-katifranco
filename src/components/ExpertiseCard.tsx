@@ -15,7 +15,7 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
 }) => {
   return (
     <div
-      className={`w-64 h-80 flex flex-col items-start justify-start text-left p-6 rounded-lg shadow-md ${color} relative hover:shadow-lg transition-shadow duration-300 group`}
+      className={`w-64 h-80 md:w-80 md:h-80 flex flex-col items-start justify-start text-left p-6 rounded-lg shadow-md ${color} relative hover:shadow-lg transition-shadow duration-300 group`}
     >
       {/* Ícono animado */}
       <img src={iconSrc} alt={title} className="w-16 h-16 mb-4" />

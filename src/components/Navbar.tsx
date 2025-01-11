@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-2">
+      <div className="max-w-6xl mx-auto flex justify-between items-center p-2 ">
         {/* Desktop Menu (centered) */}
         <div className="hidden lg:flex flex-grow justify-center space-x-6">
           {links.map((link) => (

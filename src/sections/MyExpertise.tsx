@@ -45,7 +45,8 @@ const Expertise = () => {
         <h2 className="text-4xl font-bold text-purple-600 text-center mb-12">
           {t("expertise.title")}
         </h2>
-        <div className="flex justify-between items-center gap-6 flex-wrap">
+        <div className="flex flex-wrap justify-center gap-6">
+          {" "}
           {skills.map((skill, index) => (
             <ExpertiseCard
               key={index}

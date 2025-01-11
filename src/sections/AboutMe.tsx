@@ -5,7 +5,10 @@ const AboutMe = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="bg-gray-100 h-screen py-10">
+    <section
+      id="about"
+      className="bg-gray-100 py-10 lg:h-screen lg:min-h-screen lg:pt-20"
+    >
       <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
 
@@ -24,11 +27,9 @@ const AboutMe = () => {
             <h2 className="text-4xl font-bold text-purple-600 text-center mb-8">
               {t("aboutMe.title")}
             </h2>
-            <p className="text-md  md:text-lg lg:text-xl text-gray-700">
+            <p className="text-md md:text-lg lg:text-xl text-gray-700">
               {t("aboutMe.description")}
             </p>
-            {/*  <br />
-            <p className="text-gray-900 mx-8">{t("aboutMe.skills")}</p> */}
           </div>
         </div>
       </div>

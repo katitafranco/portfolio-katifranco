@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Asegúrate de instalar react-icons
@@ -49,21 +48,30 @@ const TestimonialsSlider = () => {
           {testimonials.map((testimonial: Testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-white rounded-lg shadow-lg p-6 mx-auto text-center"
+              className="bg-white rounded-lg shadow-lg p-6 mx-auto text-center "
             >
-              <img
-                src={testimonial.image}
-                alt={`${testimonial.name} photo`}
-                className="w-12 h-12 rounded-full mx-auto mb-4"
-              />
-              <h3 className="text-xl font-semibold">{testimonial.name}</h3>
-              <p className="text-sm text-gray-500 mb-2">
-                {testimonial.company}
-              </p>
-              <p className="text-gray-700 mb-4">"{testimonial.feedback}"</p>
-              <div className="flex justify-center">
-                <span className="text-yellow-500 text-lg">★★★★★</span>
-              </div>
+              <a
+                href={testimonial.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full h-full "
+              >
+                <img
+                  src={testimonial.image}
+                  alt={`${testimonial.name} photo`}
+                  className="w-12 h-12 rounded-full mx-auto mb-4 "
+                />
+                <h3 className="text-xl font-semibold text-purple hover:text-pink">
+                  {testimonial.name}
+                </h3>
+                <p className="text-sm text-gray-500 mb-2">
+                  {testimonial.company}
+                </p>
+                <p className="text-gray-700 mb-4">"{testimonial.feedback}"</p>
+                <div className="flex justify-center">
+                  <span className="text-yellow-500 text-lg">★★★★★</span>
+                </div>
+              </a>
             </div>
           ))}
         </Slider>

@@ -91,28 +91,32 @@ const resources = {
             "company": "Starbucks",
             "feedback": "This service exceeded my expectations. Highly recommend it to everyone.",
             "rating": 5,
-            "image": "./src/assets/person1.jpg"
+            "image": "./src/assets/person1.jpg",
+            "link":""
           },
           {
             "name": "Kristin Watson",
             "company": "Louis Vuitton",
             "feedback": "Amazing experience! The design and functionality are top-notch.",
             "rating": 5,
-            "image": "./src/assets/person2.jpg"
+            "image": "./src/assets/person2.jpg",
+            "link":""
           },
           {
             "name": "Kathryn Murphy",
             "company": "McDonald's",
             "feedback": "Outstanding quality and attention to detail. Couldn't be happier.",
             "rating": 5,
-            "image": "./src/assets/person3.jpg"
+            "image": "./src/assets/person3.jpg",
+            "link":""
           },
           {
             "name": "Ronald Richards",
             "company": "Apple Inc.",
             "feedback": "Great support and incredible performance. Worth every penny.",
             "rating": 5,
-            "image": "./src/assets/person4.jpg"
+            "image": "./src/assets/person4.jpg",
+            "link":""
           }
         ]
       },
@@ -231,28 +235,32 @@ const resources = {
             "company": "Starbucks",
             "feedback": "Este servicio superó mis expectativas. Lo recomiendo a todos.",
             "rating": 5,
-            "image": "./src/assets/person1.jpg"
+            "image": "./src/assets/person1.jpg",
+            "link":""
           },
           {
             "name": "Kristin Watson",
             "company": "Louis Vuitton",
             "feedback": "¡Una experiencia increíble! El diseño y la funcionalidad son excepcionales.",
             "rating": 5,
-            "image": "./src/assets/person2.jpg"
+            "image": "./src/assets/person2.jpg",
+            "link":""
           },
           {
             "name": "Kathryn Murphy",
             "company": "McDonald's",
             "feedback": "Excelente calidad y atención al detalle. No podría estar más feliz.",
             "rating": 5,
-            "image": "./src/assets/person3.jpg"
+            "image": "./src/assets/person3.jpg",
+            "link":""
           },
           {
             "name": "Ronald Richards",
             "company": "Apple Inc.",
             "feedback": "Gran soporte e increíble rendimiento. Vale cada centavo.",
             "rating": 5,
-            "image": "./src/assets/person4.jpg"
+            "image": "./src/assets/person4.jpg",
+            "link":""
           }
         ]
       },

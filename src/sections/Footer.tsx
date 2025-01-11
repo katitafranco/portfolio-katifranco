@@ -1,9 +1,38 @@
-// components/Footer.tsx
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState<string | null>(null);
+
+  const openModal = (modalType: string) => setIsModalOpen(modalType);
+  const closeModal = () => setIsModalOpen(null);
+
+  const modalContent = {
+    terms: (
+      <div>
+        <h2 className="text-lg font-bold mb-4">Términos y Condiciones</h2>
+        <p>
+          Este sitio web se proporciona solo con fines informativos. Todos los
+          derechos de propiedad intelectual sobre el contenido presentado son
+          reservados. No se permite el uso indebido de este sitio web ni sus
+          recursos.
+        </p>
+      </div>
+    ),
+    privacy: (
+      <div>
+        <h2 className="text-lg font-bold mb-4">Política de Privacidad</h2>
+        <p>
+          Este sitio no recopila ni almacena información personal sin tu
+          consentimiento. La información proporcionada a través del formulario
+          de contacto se utiliza únicamente para responder a tus consultas.
+        </p>
+      </div>
+    ),
+  };
+
   return (
     <footer className="bg-lightGray text-gray-700 py-4">
       <div className="container mx-auto px-4">
@@ -39,28 +68,43 @@ const Footer = () => {
             <p className="text-xs mt-2">Email</p>
           </a>
         </div>
-        <p>
-          &copy; {new Date().getFullYear()} Katiuska Franco. All rights
-          reserved.
+
+        <p className="text-center mt-4">
+          &copy; {new Date().getFullYear()} Katiuska Franco. Todos los derechos
+          reservados.
         </p>
-        <p className="text-xs">
-          Image credits: Foto de{" "}
-          <a
-            className="hover:text-white"
-            href="https://unsplash.com/es/@ngeshlew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            target="_blank"
+
+        <div className="text-center mt-2 text-sm">
+          <button
+            className="text-purple underline hover:no-underline"
+            onClick={() => openModal("terms")}
           >
-            Lewis Kang'ethe Ngugi
-          </a>{" "}
-          en{" "}
-          <a
-            className="hover:text-white"
-            href="https://unsplash.com/es/fotos/computadora-portatil-negra-encendida-f5pTwLHCsAg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            target="_blank"
+            Términos y Condiciones
+          </button>
+          {" | "}
+          <button
+            className="text-purple underline hover:no-underline"
+            onClick={() => openModal("privacy")}
           >
-            Unsplash
-          </a>
-        </p>
+            Política de Privacidad
+          </button>
+        </div>
+
+        {/* Modal */}
+        {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
+              {/* Botón de cerrar */}
+              <button
+                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+                onClick={closeModal}
+              >
+                ✕
+              </button>
+              {modalContent[isModalOpen as keyof typeof modalContent]}
+            </div>
+          </div>
+        )}
       </div>
     </footer>
   );
