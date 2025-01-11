@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 :root {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -81,4 +84,26 @@ button:focus-visible {
 
 html {
   scroll-behavior: smooth;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #213547;
+}
+
+.slick-prev: hover,
+.slick-next: hover {
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
 }
