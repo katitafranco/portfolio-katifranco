@@ -1,0 +1,13 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Fondo transparente -->
+  <rect width="300" height="300" fill="none" />
+
+  <!-- Letra K geométrica -->
+  <path d="M50 50 L50 250 L80 250 L80 160 L140 250 L180 250 L120 150 L180 50 L140 50 L80 140 L80 50 Z" 
+        fill="#800020" />
+
+  <!-- Letra F geométrica -->
+  <path d="M200 50 L200 250 L230 250 L230 180 L280 180 L280 150 L230 150 L230 80 L280 80 L280 50 Z" 
+        fill="#800020" />
+</svg>
