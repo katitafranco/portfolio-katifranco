@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import imgHero from "../assets/Hero2.png";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -38,7 +39,7 @@ const Hero = () => {
         className="hidden lg:flex flex-shrink-0 items-center justify-center w-1/2 h-full ml-8"
       >
         <img
-          src="./assets/hero2.png"
+          src={imgHero}
           alt="Perfil"
           className="max-h-[70%] w-auto object-cover rounded-t-[50%] shadow-lg -ml-40"
         />
