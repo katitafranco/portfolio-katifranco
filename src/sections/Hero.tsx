@@ -38,7 +38,7 @@ const Hero = () => {
         className="hidden lg:flex flex-shrink-0 items-center justify-center w-1/2 h-full ml-8"
       >
         <img
-          src="./src/assets/hero2.png"
+          src="./assets/hero2.png"
           alt="Perfil"
           className="max-h-[70%] w-auto object-cover rounded-t-[50%] shadow-lg -ml-40"
         />
