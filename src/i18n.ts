@@ -56,17 +56,17 @@ const resources = {
 
           },
           {
-            title: "Business Agency",
-            description: "Responsive website for a business agency with HTML, CSS, JS, animations, and video.",
-            link: "https://katitafranco.github.io/biz-agency-site/",
-            image: "./assets/imagenBusiness.png",
+            "title": "Business Agency",
+            "description": "Responsive website for a business agency with HTML, CSS, JS, animations, and video.",
+            "link": "https://katitafranco.github.io/biz-agency-site/",
+            "image": "./assets/imagenBusiness.png",
 
           },
           {
-            title: "Hosting Price Calculator",
-            description: "Responsive layout of a hosting price calculator using Flexbox.",
-            link: "https://katitafranco.github.io/flex-cotizador-hosting/",
-            image: "./assets/imagenCotizador.png", // Cambia por la imagen de tu proyecto
+            "title": "Hosting Price Calculator",
+            "description": "Responsive layout of a hosting price calculator using Flexbox.",
+            "link": "https://katitafranco.github.io/flex-cotizador-hosting/",
+            "image": "./assets/imagenCotizador.png", // Cambia por la imagen de tu proyecto
 
           },
           {
