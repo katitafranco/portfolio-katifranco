@@ -46,40 +46,40 @@ const resources = {
             title: "SPA Website",
             description: "Responsive website for an SPA with a contact form, developed with HTML and CSS, attractive and functional design.",
             link: "https://katitafranco.github.io/web_spa_responsive/index.html",
-            image: "./src/assets/imagenSPA.png"
+            image: "./assets/imagenSPA.png"
           },
           {
             title: "Tourism Website",
             description: "Responsive web app for exploring tourist destinations, using HTML, CSS, and SASS.",
             link: "https://katitafranco.github.io/dynamic-travel-sass/dist/index.html",
-            image: "./src/assets/imagenTurismo.png", // Cambia por la imagen de tu proyecto
+            image: "./assets/imagenTurismo.png", // Cambia por la imagen de tu proyecto
 
           },
           {
             title: "Business Agency",
             description: "Responsive website for a business agency with HTML, CSS, JS, animations, and video.",
             link: "https://katitafranco.github.io/biz-agency-site/",
-            image: "./src/assets/imagenBusiness.png",
+            image: "./assets/imagenBusiness.png",
 
           },
           {
             title: "Hosting Price Calculator",
             description: "Responsive layout of a hosting price calculator using Flexbox.",
             link: "https://katitafranco.github.io/flex-cotizador-hosting/",
-            image: "./src/assets/imagenCotizador.png", // Cambia por la imagen de tu proyecto
+            image: "./assets/imagenCotizador.png", // Cambia por la imagen de tu proyecto
 
           },
           {
             title: "Interactive Testimonials",
             description: "Web page with an interactive testimonial slider, using HTML, CSS, and native JavaScript with smooth transitions.",
             link: "https://katitafranco.github.io/slider-testimonios-js/",
-            image: "./src/assets/imagenSliders.png",
+            image: "./assets/imagenSliders.png",
           },
           {
             title: "MERN User CRUD",
             description: "User CRUD app using MongoDB, Mongoose, Express, React, Node.js with AOS animations and SweetAlert2 notifications.",
             link: "https://github.com/katitafranco/crud-mern-stack/tree/master",
-            image: "./src/assets/imagenCRUD2.png",
+            image: "./assets/imagenCRUD2.png",
           },
         ],
       },
@@ -91,7 +91,7 @@ const resources = {
             "company": "Starbucks",
             "feedback": "This service exceeded my expectations. Highly recommend it to everyone.",
             "rating": 5,
-            "image": "./src/assets/person1.jpg",
+            "image": "./assets/person1.jpg",
             "link":""
           },
           {
@@ -99,7 +99,7 @@ const resources = {
             "company": "Louis Vuitton",
             "feedback": "Amazing experience! The design and functionality are top-notch.",
             "rating": 5,
-            "image": "./src/assets/person2.jpg",
+            "image": "./assets/person2.jpg",
             "link":""
           },
           {
@@ -107,7 +107,7 @@ const resources = {
             "company": "McDonald's",
             "feedback": "Outstanding quality and attention to detail. Couldn't be happier.",
             "rating": 5,
-            "image": "./src/assets/person3.jpg",
+            "image": "./assets/person3.jpg",
             "link":""
           },
           {
@@ -115,7 +115,7 @@ const resources = {
             "company": "Apple Inc.",
             "feedback": "Great support and incredible performance. Worth every penny.",
             "rating": 5,
-            "image": "./src/assets/person4.jpg",
+            "image": "./assets/person4.jpg",
             "link":""
           }
         ]
@@ -235,7 +235,7 @@ const resources = {
             "company": "Starbucks",
             "feedback": "Este servicio superó mis expectativas. Lo recomiendo a todos.",
             "rating": 5,
-            "image": "./src/assets/person1.jpg",
+            "image": "./assets/person1.jpg",
             "link":""
           },
           {
@@ -243,7 +243,7 @@ const resources = {
             "company": "Louis Vuitton",
             "feedback": "¡Una experiencia increíble! El diseño y la funcionalidad son excepcionales.",
             "rating": 5,
-            "image": "./src/assets/person2.jpg",
+            "image": "./assets/person2.jpg",
             "link":""
           },
           {
@@ -251,7 +251,7 @@ const resources = {
             "company": "McDonald's",
             "feedback": "Excelente calidad y atención al detalle. No podría estar más feliz.",
             "rating": 5,
-            "image": "./src/assets/person3.jpg",
+            "image": "./assets/person3.jpg",
             "link":""
           },
           {
@@ -259,7 +259,7 @@ const resources = {
             "company": "Apple Inc.",
             "feedback": "Gran soporte e increíble rendimiento. Vale cada centavo.",
             "rating": 5,
-            "image": "./src/assets/person4.jpg",
+            "image": "./assets/person4.jpg",
             "link":""
           }
         ]
