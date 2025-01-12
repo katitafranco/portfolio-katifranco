@@ -32,16 +32,38 @@ const ContactForm: React.FC = () => {
 
   const [statusMessage, setStatusMessage] = useState("");
 
-  const handleChange = (
+  /* const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
-  ) => {
+  ) => 
+    {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
+  }; */
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value, type } = e.target;
+
+    // Verificamos explícitamente si el target es un input de tipo checkbox
+    if (type === "checkbox" && e.target instanceof HTMLInputElement) {
+      setFormData({
+        ...formData,
+        [name]: e.target.checked, // Solo accedemos a "checked" si es un checkbox
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value, // Usamos "value" para todos los demás casos
+      });
+    }
   };
 
   const handleSubmit = (event: React.FormEvent) => {
@@ -80,13 +102,13 @@ const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="h-full space-y-2 max-w-3xl mx-auto px-4 my-8 sm:px-6 lg:px-8  p-6 rounded-md "
+      className="h-full space-y-2 max-w-3xl mx-auto px-4 mt-4 sm:px-6 lg:px-8  p-6 rounded-md "
     >
       <div className="flex flex-col items-center">
-        <h2 className="text-3xl font-bold text-center mb-8 text-purple-700">
+        <h2 className="text-3xl font-bold text-center mb-4 text-purple-700">
           {t("contact.form.title")}
         </h2>
-        <p className="mb-8 text-lg ">
+        <p className="mb-2 text-lg ">
           Puedes enviarme un mensaje a través de este formulario.
         </p>
       </div>
