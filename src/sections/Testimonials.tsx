@@ -54,20 +54,22 @@ const TestimonialsSlider = () => {
                 href={testimonial.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full "
+                className="w-full h-full group "
               >
                 <img
                   src={testimonial.image}
                   alt={`${testimonial.name} photo`}
                   className="w-12 h-12 rounded-full mx-auto mb-4 "
                 />
-                <h3 className="text-xl font-semibold text-purple hover:text-pink">
+                <h3 className="text-xl font-semibold text-gray-700 group-hover:text-purple">
                   {testimonial.name}
                 </h3>
-                <p className="text-sm text-gray-500 mb-2">
+                <p className="text-sm text-purple mb-2 group-hover:text-pink">
                   {testimonial.company}
                 </p>
-                <p className="text-gray-700 mb-4">"{testimonial.feedback}"</p>
+                <p className="text-gray-700 mb-4 group-hover:text-purple">
+                  "{testimonial.feedback}"
+                </p>
                 <div className="flex justify-center">
                   <span className="text-yellow-500 text-lg">★★★★★</span>
                 </div>

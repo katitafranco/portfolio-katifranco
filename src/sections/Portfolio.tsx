@@ -32,7 +32,7 @@ const Portfolio = () => {
             className=" flex flex-row justify-between px-6 pb-0 mb-0 items-center bg-pink text-white rounded-md hover:bg-purple-800 transition-colors "
           > */}
           <a
-            href="https://github.com/katitafranco/"
+            href="https://github.com/katitafranco?tab=repositories"
             target="_blank"
             className="inline-flex flex-row justify-between px-6 sm:px-2 sm:mx-2 py-1 mb-0 items-center bg-pink text-white rounded-md hover:bg-purple-800 transition-colors"
           >

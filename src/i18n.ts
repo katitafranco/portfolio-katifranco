@@ -187,45 +187,45 @@ const resources = {
       },
       portfolio: {
         title: "Portafolio",
-        button: "Ingresa a mi Github",
+        button: "Ver en GitHub",
         projects: [
           {
-            title: "SPA Website",
-            description: "Responsive web for a SPA with an attractive design and contact form, using HTML and CSS.",
+            title: "Sitio Web SPA",
+            description: "Sitio web responsivo para una SPA con un formulario de contacto, desarrollado con HTML y CSS, diseño atractivo y funcional.",
             link: "https://katitafranco.github.io/web_spa_responsive/index.html",
-            image: "./assets/imagenSPA.png",
+            image: "./assets/imagenSPA.png"
           },
           {
-            title: "Tourism Website",
-            description: "Responsive web to explore tourist destinations, using HTML, CSS, and SASS.",
+            title: "Sitio Web de Turismo",
+            description: "Aplicación web responsiva para explorar destinos turísticos, utilizando HTML, CSS y SASS.",
             link: "https://katitafranco.github.io/dynamic-travel-sass/dist/index.html",
-            image: "./assets/imagenTurismo.png", // Replace with your project's image
+            image: "./assets/imagenTurismo.png"
           },
           {
-            title: "Business Agency",
-            description: "Responsive web with HTML, CSS, JS, animations, and video.",
+            title: "Agencia de Negocios",
+            description: "Sitio web responsivo para una agencia de negocios con HTML, CSS, JS, animaciones y video.",
             link: "https://katitafranco.github.io/biz-agency-site/",
-            image: "./assets/imagenBusiness.png",
+            image: "./assets/imagenBusiness.png"
           },
           {
-            title: "Hosting Quotation Tool",
-            description: "Responsive layout for a hosting quotation tool using Flexbox.",
+            title: "Calculadora de Precios de Hosting",
+            description: "Diseño responsivo de una calculadora de precios de hosting usando Flexbox.",
             link: "https://katitafranco.github.io/flex-cotizador-hosting/",
-            image: "./assets/imagenCotizador.png", // Replace with your project's image
+            image: "./assets/imagenCotizador.png"
           },
           {
-            title: "Interactive Testimonials",
-            description: "Interactive testimonial slider using HTML, CSS, and JavaScript.",
+            title: "Testimonios Interactivos",
+            description: "Página web con un slider de testimonios interactivo, utilizando HTML, CSS y JavaScript nativo con transiciones suaves.",
             link: "https://katitafranco.github.io/slider-testimonios-js/",
-            image: "./assets/imagenSliders.png",
+            image: "./assets/imagenSliders.png"
           },
           {
-            title: "MERN User CRUD",
-            description: "User CRUD application with MongoDB, Express, React, Node.js, AOS, and SweetAlert2.",
+            title: "CRUD de Usuarios MERN",
+            description: "Aplicación CRUD de usuarios utilizando MongoDB, Mongoose, Express, React, Node.js con animaciones AOS y notificaciones SweetAlert2.",
             link: "https://github.com/katitafranco/crud-mern-stack/tree/master",
-            image: "./assets/imagenCRUD2.png",
-          },
-        ],
+            image: "./assets/imagenCRUD2.png"
+          }
+        ]
       },
       "testimonials": {
         "title": "Testimonios",
