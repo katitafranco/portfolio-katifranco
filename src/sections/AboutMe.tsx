@@ -24,7 +24,7 @@ const AboutMe = () => {
 
           {/* Descripción */}
           <div className="text-justify md:text-left md:w-2/3">
-            <h2 className="text-4xl font-bold text-purple-600 text-center mb-8">
+            <h2 className="text-4xl font-bold text-purple-600 text-center dark:text-black mb-8">
               {t("aboutMe.title")}
             </h2>
             <p className="text-md md:text-lg lg:text-xl text-gray-700">

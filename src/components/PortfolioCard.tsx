@@ -5,6 +5,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   link: string;
+  titleButtonCard: string;
 }
 
 const PortfolioCard: React.FC<ProjectCardProps> = ({
@@ -12,6 +13,7 @@ const PortfolioCard: React.FC<ProjectCardProps> = ({
   description,
   image,
   link,
+  titleButtonCard,
 }) => {
   return (
     <div className="h-[26rem] sm:max-w-[18rem] bg-gray-100 p-6  rounded-md shadow-lg transition-transform duration-300 relative hover:scale-105 hover:shadow-lg">
@@ -22,24 +24,31 @@ const PortfolioCard: React.FC<ProjectCardProps> = ({
       />
       <h3 className="pt-48 text-xl font-semibold mb-2 text-black">{title}</h3>
       <p className="text-darkBlue text-sm sm:text-xs mb-4">{description}</p>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-start justify-start text-purple-600 border-b-3 border-red hover:border-pink-500 hover:text-pink-500 transition-all duration-300"
-      >
-        <span>View In Dribbble</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-5 h-5 ml-2"
+      <div className="relative">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-start justify-start text-purple-600 dark:text-black hover:border-pink-500 hover:text-pink-500 transition-all duration-300"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </a>
+          <span>{titleButtonCard}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-5 ml-2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+        <div className="absolute -bottom-1 left-0 w-28 h-0.5 bg-pink"></div>
+      </div>
     </div>
   );
 };

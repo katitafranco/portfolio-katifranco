@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className=" flex items-center justify-around bg-gray-100 px-8 pb-8 h-[90vh] mt-[10vh]"
+      className=" flex items-center justify-around bg-gray-100 dark:text-black px-8 pb-8 h-[90vh] mt-[10vh]"
     >
       {/* Columna de contenido */}
       <div

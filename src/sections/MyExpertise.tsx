@@ -41,7 +41,7 @@ const Expertise = () => {
   return (
     <section id="expertise" className="bg-white h-full py-16">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-purple-600 text-center mb-12">
+        <h2 className="text-4xl font-bold text-purple-600 dark:text-black text-center mb-12">
           {t("expertise.title")}
         </h2>
         <div className="flex flex-wrap justify-center gap-6">

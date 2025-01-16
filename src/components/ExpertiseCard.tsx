@@ -19,7 +19,7 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
     >
       {/* Ícono animado */}
       <img src={iconSrc} alt={title} className="w-16 h-16 mb-4" />
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2 dark:text-black">{title}</h3>
       <p className="text-gray-700">{description}</p>
       <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent rounded-b-lg group-hover:bg-purple transition-all duration-300"></div>
     </div>

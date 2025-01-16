@@ -2,6 +2,30 @@ import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Asegúrate de instalar react-icons
 
+const PrevArrow = (props: any) => {
+  const { onClick } = props; // Filtra solo las props que necesitas
+  return (
+    <button
+      className="slick-prev text-3xl absolute left-4 top-1/2 transform -translate-y-1/2 z-10"
+      onClick={onClick}
+    >
+      <FaChevronLeft style={{ color: "#2d3748", fontSize: "24px" }} />
+    </button>
+  );
+};
+
+const NextArrow = (props: any) => {
+  const { onClick } = props; // Filtra solo las props que necesitas
+  return (
+    <button
+      className="slick-next text-3xl absolute right-4 top-1/2 transform -translate-y-1/2 z-10"
+      onClick={onClick}
+    >
+      <FaChevronRight style={{ color: "#2d3748", fontSize: "24px" }} />
+    </button>
+  );
+};
+
 const TestimonialsSlider = () => {
   const { t } = useTranslation();
 
@@ -14,16 +38,16 @@ const TestimonialsSlider = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true, // Asegúrate de habilitar las flechas
-    prevArrow: (
+    /* 
       <button className="slick-prev text-3xl absolute left-4 top-1/2 transform -translate-y-1/2 z-10">
         <FaChevronLeft style={{ color: "#2d3748", fontSize: "24px" }} />
-      </button>
-    ),
-    nextArrow: (
+      </button> */
+    prevArrow: <PrevArrow />,
+    /* 
       <button className="slick-next text-3xl absolute right-4 top-1/2 transform -translate-y-1/2 z-10">
         <FaChevronRight style={{ color: "#2d3748", fontSize: "24px" }} />
-      </button>
-    ),
+      </button> */
+    nextArrow: <NextArrow />,
   };
 
   interface Testimonial {
@@ -41,7 +65,7 @@ const TestimonialsSlider = () => {
   return (
     <section id="testimonials" className="bg-gray-100 h-full py-16">
       <div className="px-8 max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 dark:text-black">
           {t("testimonials.title")}
         </h2>
         <Slider {...settings}>
