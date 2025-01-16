@@ -224,7 +224,7 @@ const resources = {
           },
           {
             title: "CRUD de Usuarios MERN",
-            description: "Aplicación CRUD de usuarios utilizando MongoDB, Mongoose, Express, React, Node.js con animaciones AOS y notificaciones SweetAlert2.",
+            description: "App CRUD Usuarios con MongoDB, Mongoose, Express, React, Node.js, animaciones AOS y notificaciones SweetAlert2.",
             link: "https://github.com/katitafranco/crud-mern-stack/tree/master",
             image: "./assets/imagenCRUD2.png"
           }
