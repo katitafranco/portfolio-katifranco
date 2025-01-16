@@ -114,7 +114,7 @@ const resources = {
           {
             "name": "Ramon Chancay",
             "company": "Desarol",
-            "feedback": "Katiuska always brings valuable ideas and is a great support for the team.",
+            "feedback": "Katiuska is an excellent professional, She is able to adapt to any project, always contributes exceptional ideas for the Team.",
             "rating": 5,
             "image": "./assets/person1.jpg",
             "link": "https://www.linkedin.com/in/devrchancay/"
@@ -261,7 +261,7 @@ const resources = {
           {
             "name": "Ramon Chancay",
             "company": "Desarol",
-            "feedback": "Katiuska siempre aporta ideas valiosas y es un gran apoyo para el equipo",
+            "feedback": "Katiuska es una excelente profesional. Es capaz de adaptarse a cualquier proyecto y siempre contribuye con ideas excepcionales para el equipo.",
             "rating": 5,
             "image": "./assets/person1.jpg",
             "link": "https://www.linkedin.com/in/devrchancay/"
