@@ -40,7 +40,8 @@ const resources = {
       },
       portfolio: {
         title: "Portfolio",
-        button: "View In GitHub",
+        button: "View My GitHub",
+        titleButtonCard: "View in Github",
         projects: [
           {
             title: "SPA Website",
@@ -87,43 +88,44 @@ const resources = {
         "title": "Testimonials",
         "list": [
           {
-            "name": "Daniel Russell",
-            "company": "Starbucks",
-            "feedback": "This service exceeded my expectations. Highly recommend it to everyone.",
-            "rating": 5,
-            "image": "./assets/person1.jpg",
-            "link":""
-          },
-          {
-            "name": "Kristin Watson",
-            "company": "Louis Vuitton",
-            "feedback": "Amazing experience! The design and functionality are top-notch.",
-            "rating": 5,
-            "image": "./assets/person2.jpg",
-            "link":""
-          },
-          {
-            "name": "Kathryn Murphy",
-            "company": "McDonald's",
-            "feedback": "Outstanding quality and attention to detail. Couldn't be happier.",
+            "name": "Veronica Franco",
+            "company": "Liris SA",
+            "feedback": "She is always learning and improving, which inspires the team.",
             "rating": 5,
             "image": "./assets/person3.jpg",
-            "link":""
+            "link": "https://www.linkedin.com/in/vero-franco-41162331/"
           },
           {
-            "name": "Ronald Richards",
-            "company": "Apple Inc.",
-            "feedback": "Great support and incredible performance. Worth every penny.",
+            "name": "Dover Alvarez",
+            "company": "UE Steve Jobs by Genialopolis.",
+            "feedback": "She always shows empathy and is willing to support others in the team.",
+            "rating": 5,
+            "image": "./assets/person2.jpg",
+            "link": "https://genialopolis.com/"
+          },
+          {
+            "name": "Alfredo Varas",
+            "company": "BairesDev",
+            "feedback": "He has a great ability to generate creative and effective solutions.",
             "rating": 5,
             "image": "./assets/person4.jpg",
-            "link":""
+            "link": "https://www.linkedin.com/in/alfredo-varas/"
+          },
+          {
+            "name": "Ramon Chancay",
+            "company": "Desarol",
+            "feedback": "Katiuska always brings valuable ideas and is a great support for the team.",
+            "rating": 5,
+            "image": "./assets/person1.jpg",
+            "link": "https://www.linkedin.com/in/devrchancay/"
           }
         ]
+
       },
       "contact": {
         "form": {
           "title": "Contact Me",
-          "subtitle":"Feel free to send me a message using this form.",
+          "subtitle": "Feel free to send me a message using this form.",
           "placeholders": {
             "firstName": "Your first name",
             "lastName": "Your last name",
@@ -187,7 +189,8 @@ const resources = {
       },
       portfolio: {
         title: "Portafolio",
-        button: "Ver en GitHub",
+        button: "Ver Mi GitHub",
+        titleButtonCard:"Ver en Github",
         projects: [
           {
             title: "Sitio Web SPA",
@@ -227,47 +230,48 @@ const resources = {
           }
         ]
       },
+
       "testimonials": {
         "title": "Testimonios",
         "list": [
           {
-            "name": "Daniel Russell",
-            "company": "Starbucks",
-            "feedback": "Este servicio superó mis expectativas. Lo recomiendo a todos.",
-            "rating": 5,
-            "image": "./assets/person1.jpg",
-            "link":""
-          },
-          {
-            "name": "Kristin Watson",
-            "company": "Louis Vuitton",
-            "feedback": "¡Una experiencia increíble! El diseño y la funcionalidad son excepcionales.",
-            "rating": 5,
-            "image": "./assets/person2.jpg",
-            "link":""
-          },
-          {
-            "name": "Kathryn Murphy",
-            "company": "McDonald's",
-            "feedback": "Excelente calidad y atención al detalle. No podría estar más feliz.",
+            "name": "Veronica Franco",
+            "company": "Liris SA",
+            "feedback": "Siempre está aprendiendo y mejorando, lo que inspira al equipo.",
             "rating": 5,
             "image": "./assets/person3.jpg",
-            "link":""
+            "link": "https://www.linkedin.com/in/vero-franco-41162331/"
           },
           {
-            "name": "Ronald Richards",
-            "company": "Apple Inc.",
-            "feedback": "Gran soporte e increíble rendimiento. Vale cada centavo.",
+            "name": "Dover Alvarez",
+            "company": "UE Steve Jobs by Genialopolis.",
+            "feedback": "Siempre muestra empatía y está dispuesta a apoyar a los demás en el equipo.",
+            "rating": 5,
+            "image": "./assets/person2.jpg",
+            "link": "https://genialopolis.com/"
+          },
+          {
+            "name": "Alfredo Varas",
+            "company": "BairesDev",
+            "feedback": "Tiene una gran capacidad para generar soluciones creativas y efectivas.",
             "rating": 5,
             "image": "./assets/person4.jpg",
-            "link":""
+            "link": "https://www.linkedin.com/in/alfredo-varas/"
+          },
+          {
+            "name": "Ramon Chancay",
+            "company": "Desarol",
+            "feedback": "Katiuska siempre aporta ideas valiosas y es un gran apoyo para el equipo",
+            "rating": 5,
+            "image": "./assets/person1.jpg",
+            "link": "https://www.linkedin.com/in/devrchancay/"
           }
         ]
       },
       "contact": {
         "form": {
           "title": "Contáctame",
-          "subtitle":"Puedes enviarme un mensaje a través de este formulario.",
+          "subtitle": "Puedes enviarme un mensaje a través de este formulario.",
           "placeholders": {
             "firstName": "Tu nombre",
             "lastName": "Tu apellido",
