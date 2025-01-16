@@ -16,7 +16,7 @@ const resources = {
       hero: {
         introduce: "I'm Katiuska",
         title:
-          "A Systems Engineer & Developer. Passionate about Frontend with React, but skilled across the full stack.",
+          "A Software Engineer & Developer. Passionate about Frontend with React, but skilled across the full stack.",
         subtitle:
           "Currently focusing on frontend development with React and React Native, but with solid experience in backend technologies like .NET and SQL database.",
         cta: "Get in Touch",
